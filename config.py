@@ -1,6 +1,6 @@
 class config():
 
-    url = 'http://wwbaidu.adsad这块去了，，隐私。'
+    url = 'http://wwbaidu.adsad这块去了，，隐私。需要的联系我QQ:509781192'
 
 
     def getType(self):
