@@ -1,5 +1,5 @@
-from huang.Spider import *
-from huang.config import *
+from dogSpider.Spider import *
+from dogSpider.config import *
 
 class run():
     def __init__(self):

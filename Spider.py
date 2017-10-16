@@ -38,7 +38,7 @@ class spider:
         #print(soup.prettify())
         link = soup.find_all('a',id=True,href=True)
         for i in link:
-                print (type(i))
+                print (i)
 
 
     def guolv(self,tag):
