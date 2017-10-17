@@ -140,9 +140,13 @@ class spider:
         name = name #OXWU4St.html
         url = config.torrent_url_down #'http://www3.uptorrentfilespacedownhostabc.club/updowm/down.php'
         torrent_file = config.torrent_url #http://www3.uptorrentfilespacedownhostabc.club/updowm/file.php/
-        name_s = name.split('.')
-        torrent_name = name_s[-2]
-
+        try:
+            name_s = name.split('.')
+            torrent_name = name_s[-2]
+        except (IOError,OSError) as e:
+            print(e.code)
+            print('\n')
+            print (torrent_file+name)
         data = {
             'type' : 'torrent',
             'id': torrent_name,
