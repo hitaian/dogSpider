@@ -138,6 +138,7 @@ class spider:
         print('下载种子中。。。。。')
         path = movietype + '/' + title # /亚洲无码/小哥可/
         name = name #OXWU4St.html
+<<<<<<< HEAD
         url = config.torrent_url_down #'http://www3.uptorrentfilespacedownhostabc.club/updowm/down.php'
         torrent_file = config.torrent_url #http://www3.uptorrentfilespacedownhostabc.club/updowm/file.php/
         try:
@@ -147,6 +148,13 @@ class spider:
             print(e.code)
             print('\n')
             print (torrent_file+name)
+=======
+        url = config.torrent_url_down #'http://www3.xxx.club/updowm/down.php'
+        torrent_file = config.torrent_url #http://www3.xxxx.club/updowm/file.php/
+        name_s = name.split('.')
+        torrent_name = name_s[-2]
+
+>>>>>>> 1919df585e9b748833381d5e5702acd9e20e6167
         data = {
             'type' : 'torrent',
             'id': torrent_name,
